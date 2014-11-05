@@ -1,4 +1,13 @@
 ::City Streets
 You're out on the street. There are half-eaten lollipops and 90s alt-rock albums all over the place.
+\
+<<if ($mudfishLove is true) and not ($mudfishDead is true)>>
+The <strong>mudfish</strong> looks deep into your eyes. Then it wriggles, lays on its back, and stops moving. A closer examination reveals that it's not breathing.
+
+Apparently it was too close to death for you to save it.
+<<set $mudfishDead to true>>\
+<<endif>>\
 
 Behind you is the entrance to a [[basketball court|Start]].
+
+[[keep walkin'|City Streets]]
