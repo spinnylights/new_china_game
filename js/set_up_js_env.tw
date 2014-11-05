@@ -1,0 +1,23 @@
+:: JS Test [script]
+macros['loadJS'] = {
+  handler: function(place, object, parameters) {
+    var se = document.createElement("script");
+    se.type = 'text/javascript';
+    console.log(se);
+    console.log(parameters[0]);
+    se.src = 'js/' + parameters[0];
+    var hT = document.getElementsByTagName("HEAD")[0];
+    hT.appendChild(se);
+    if (se.innerText) {
+      eval(se.innerText);
+    } else {
+      eval(se.textContent);
+    }
+  }
+};
+
+macros['norbert'] = {
+  handler: function() {
+    console.log(Norbert.speak());  
+  }
+};
