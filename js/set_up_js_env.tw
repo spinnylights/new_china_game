@@ -16,8 +16,9 @@ macros['loadJS'] = {
   }
 };
 
-macros['norbert'] = {
-  handler: function() {
-    console.log(Norbert.speak());  
+macros['getSnackFood'] = {
+  handler: function(place, macroName, parameters, parser) {
+    insertText(place, Generators.snackFood());
   }
 };
+
