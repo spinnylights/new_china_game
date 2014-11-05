@@ -7,7 +7,10 @@ The <strong>mudfish</strong> looks deep into your eyes. Then it wriggles, lays o
 Apparently it was too close to death for you to save it.
 <<set $mudfishDead to true>>\
 <<endif>>\
-
+\
+<<if (random(0,5) is 5) or ($justFromBC is true)>>
 Behind you is the entrance to a [[basketball court|Start]].
+<<set $justFromBC to false>>\
+<<endif>>\
 
 [[keep walkin'|City Streets]]
