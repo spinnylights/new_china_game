@@ -1,0 +1,20 @@
+:: Start
+<<nobr>>
+<<loadJS underscore-min.js>>
+<<loadJS lists.js>>
+<<loadJS generators.js>>
+<<endnobr>>\
+\
+You're sitting on the edge of a small, dirty bed in a dusty Airstream trailer.
+
+You've just finished your breakfast of a box of mac 'n' cheese you found in the cupboard above the sink. You cooked it in a pan over a fire outside.
+
+It's exciting—you're on the outskirts of a small city. After being in the countryside for weeks, the idea of being in a city is full of promise.
+
+[[leave the trailer|Outside the Trailer]]
+[[hang out a bit longer|Start][$trailerHangout = true]]
+
+<<if $trailerHangout>>\
+<<hangOutInTrailer>>
+<<endif>>
+

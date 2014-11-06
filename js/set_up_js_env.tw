@@ -22,3 +22,9 @@ macros['getSnackFood'] = {
   }
 };
 
+macros['hangOutInTrailer'] = {
+  handler: function(place, macroName, parameters, parser) {
+    insertText(place, Generators.trailerHangout());
+  }
+};
+

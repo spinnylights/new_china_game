@@ -6,13 +6,13 @@ To your left is a gigantic pile of snack foods. To your right are half a teddy b
 You open a bag of <strong><<getSnackFood>></strong> and toss them to the mudfish. The mudfish gobbles them up hungrily.
 
 [[feed the mudfish more snacks|Mudfish Puddle]]
-[[walk away from the puddle|Start]]
+[[walk away from the puddle|Basketball Court]]
 <<else if not ($mudfishDead is true)>>
 You hear some splashing at your feet. You look down and see that a mudfish has crawled halfway out of the pond to greet you. It looks thin and pitiful.
 
-You could [[feed the mudfish some snack food|Mudfish Puddle][$mudfishLove = true]] from the pile. You could also [[abandon the mudfish|Start]].
+You could [[feed the mudfish some snack food|Mudfish Puddle][$mudfishLove = true]] from the pile. You could also [[abandon the mudfish|Basketball Court]].
 <<else>>
 A <strong>mudfish</strong> once lived here. (;︵;)
 
-The rest of the [[basketball court|Start]] is behind you. You could also just go back out onto the [[streets|City Streets]].
+The rest of the [[basketball court|Basketball Court]] is behind you. You could also just go back out onto the [[streets|City Streets]].
 <<endif>>

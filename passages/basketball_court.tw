@@ -1,9 +1,4 @@
-:: Start
-<<nobr>>
-<<loadJS underscore-min.js>>
-<<loadJS lists.js>>
-<<loadJS generators.js>>
-<<endnobr>>\
+:: Basketball Court
 You're standing in an empty basketball court. The court surface has become grey-green with time. Bits of pamphlets and a few pills rustle around your feet in the breeze.
 \
 <<if ($mudfishLove is true) and not ($mudfishDead is true)>>
